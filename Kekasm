@@ -1349,6 +1349,9 @@ local function iniciarHitboxExpander()
                     local hrpObjetivo = jugadorObjetivo.Character and jugadorObjetivo.Character:FindFirstChild("HumanoidRootPart")
                     if hrpObjetivo then
                         hrpObjetivo.Size = Vector3.new(hitboxSize, hitboxSize, hitboxSize)
+                        hrpObjetivo.Transparency = 0.7
+                        hrpObjetivo.Color = Color3.fromRGB(0, 0, 255)
+                        hrpObjetivo.Material = Enum.Material.Neon
                         hrpObjetivo.CanCollide = false
                     end
                 end)
